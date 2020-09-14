@@ -1,5 +1,6 @@
 package com.example.multiplelanguageapp;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -19,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         loadLocals();
         setContentView(R.layout.activity_main);
+        //Adding ActionBar
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle(getResources().getString(R.string.app_name));
+
         Button changeLang = findViewById(R.id.changeLang);
         changeLang.setOnClickListener(new View.OnClickListener() {
             @Override
