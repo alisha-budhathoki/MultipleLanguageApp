@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showChangeLangauge() {
-
+        //array of language
+        final String[] listItems = {"French", "Hindi", "English", "Nepali", "Urdu"};
     }
 }
